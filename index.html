@@ -13,7 +13,9 @@
 <!-- Header & Navigation -->
   <header>
   <div class="container header-container">
-  <a href="#" class="logo">Ваша Компанія</a>
+  <a href="#" class="logo">
+    <img src="logo_ai_transparent.png" alt="Логотип AI">
+  </a>
 		<nav>
 		<ul class="nav-menu">
 		<li><a href="#головна">Головна</a></li>
@@ -31,11 +33,14 @@
 
 	<!-- Hero Section -->
 	<section id="головна" class="hero">
-		<div class="container">
+		<div class="container hero-content">
 			<h1>Професійні рішення для вашого бізнесу</h1>
 			<p>Ми допомагаємо компаніям досягати нових висот за допомогою інноваційних рішень та експертного підходу</p>
 			<a href="#контакти" class="btn">Зв'язатися з нами</a>
 		</div>
+		<figure class="hero-background">
+			<img src="baner_solutions.png" alt="baner-solutions" class="hero-image">
+		</figure>
 	</section>
 
 	<!-- About Section -->
@@ -206,6 +211,13 @@
 		</div>
 	</section>
 
+	<!-- Кнопка "Вверх" -->
+	<button id="scrollToTop" class="scroll-to-top">
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+			<path d="M12 19V5M5 12l7-7 7 7"/>
+		</svg>
+	</button>
+
 	<!-- Footer -->
 	<footer>
 		<div class="container">
@@ -273,6 +285,26 @@
 					// Закрити мобільне меню після кліку
 					document.querySelector('.nav-menu').classList.remove('active');
 				}
+			});
+		});
+
+		// Кнопка прокрутки вверх
+		const scrollToTopButton = document.getElementById('scrollToTop');
+
+		// Показываем/скрываем кнопку при прокрутке
+		window.addEventListener('scroll', () => {
+			if (window.pageYOffset > 300) { // Показываем кнопку после прокрутки на 300px
+				scrollToTopButton.classList.add('visible');
+			} else {
+				scrollToTopButton.classList.remove('visible');
+			}
+		});
+
+		// Прокрутка вверх при клике
+		scrollToTopButton.addEventListener('click', () => {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
 			});
 		});
 	</script>
