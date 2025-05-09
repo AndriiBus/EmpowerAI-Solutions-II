@@ -421,3 +421,109 @@ footer {
 		font-size: 28px;
 	}
 }
+
+/* Мобильное меню */
+@media screen and (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0153a8;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu li {
+        margin: 15px 0;
+        display: block;
+    }
+
+    /* Hero Section для мобильных */
+    .hero-content {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Сетки для мобильных */
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Footer для мобильных */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 30px;
+    }
+
+    /* Форма контактов */
+    .contact-form {
+        padding: 20px;
+    }
+
+    /* Кнопка прокрутки вверх */
+    .scroll-to-top {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+/* Планшеты */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .services-grid,
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Дополнительные стили для улучшения читаемости */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Фиксированная высота изображений на мобильных */
+@media screen and (max-width: 768px) {
+    .service-card img,
+    .portfolio-item img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
