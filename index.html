@@ -1,313 +1,767 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>EmpowerAI Solutions</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="icon" type="image/png" href="fiveicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>EmpowerAI Solutions - Інтелектуальні рішення для вашого бізнесу</title>
+    <!-- Покращений мета-заголовок для SEO -->
+    <meta name="description" content="EmpowerAI Solutions - впровадження інтелектуальних AI-рішень для оптимізації бізнес-процесів та збільшення прибутку">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="fiveicon.png" />
+    <!-- Додаємо сучасні шрифти з Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Додаємо AOS (Animate On Scroll) для анімацій при прокрутці -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 
 <body>
-<!-- Header & Navigation -->
-  <header>
-  <div class="container header-container">
-  <a href="#" class="logo">
-    <img src="logo_ai_transparent.png" alt="Логотип AI">
-  </a>
-		<nav>
-		<ul class="nav-menu">
-		<li><a href="#головна">Головна</a></li>
-		<li><a href="#про-нас">Про нас</a></li>
-		<li><a href="#послуги">Послуги</a></li>
-		<li><a href="#портфоліо">Портфоліо</a></li>
-		<li><a href="#блог">Блог</a></li>
-		<li><a href="#відгуки">Відгуки</a></li>
-		<li><a href="#контакти">Контакти</a></li>
-		</ul>
-		<div class="mobile-menu-btn">☰</div>
-		</nav>
-		</div>
-	</header>
+    <!-- Header & Navigation з мультимовністю -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo_ai_transparent.png" alt="EmpowerAI Solutions Logo">
+                </a>
+            </div>
+            <div class="header-controls">
+                <div class="language-selector">
+                    <select id="language-select" onchange="changeLanguage()">
+                        <option value="uk">UA</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+                <div class="mobile-menu-btn">☰</div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#головна">Головна</a></li>
+                    <li><a href="#про-нас">Про нас</a></li>
+                    <li><a href="#послуги">Послуги</a></li>
+                    <li><a href="#портфоліо">Кейси</a></li>
+                    <li><a href="#блог">Блог</a></li>
+                    <li><a href="#відгуки">Відгуки</a></li>
+                    <li><a href="#контакти">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-	<!-- Hero Section -->
-	<section id="головна" class="hero">
-		<div class="container hero-content">
-			<h1>Професійні рішення для вашого бізнесу</h1>
-			<p>Ми допомагаємо компаніям досягати нових висот за допомогою інноваційних рішень та експертного підходу</p>
-			<a href="#контакти" class="btn">Зв'язатися з нами</a>
-		</div>
-		<figure class="hero-background">
-			<img src="baner_solutions.png" alt="baner-solutions" class="hero-image">
-		</figure>
-	</section>
+    <!-- Оновлена Hero Section з потужнішим повідомленням -->
+    <section id="головна" class="hero">
+        <div class="container hero-content" data-aos="fade-right" data-aos-duration="1000">
+            <!-- Змінене головне повідомлення згідно з рекомендаціями -->
+            <h1>Трансформуємо бізнес через силу штучного інтелекту</h1>
+            <p>Персоналізовані AI рішення, що дозволяють зберегти час, гроші для компанії при цьому надаючи кращий сервіс клієнтам</p>
+            <a href="#контакти" class="btn primary-btn">Розпочати співпрацю</a>
+            <a href="#послуги" class="btn secondary-btn">Дізнатися більше</a>
+        </div>
+    </section>
 
-	<!-- About Section -->
-	<section id="про-нас" class="section">
-		<div class="container">
-			<h2 class="section-title">Про нас</h2>
-			<div class="about-content">
-				<div class="about-image">
-					<img src="/api/placeholder/600/400" alt="Про нашу компанію">
-				</div>
-				<div class="about-text">
-					<h3>Наша історія</h3>
-					<p>Ми команда професіоналів з багаторічним досвідом роботи в галузі. Наша компанія була заснована з метою
-						надання високоякісних послуг для підприємств будь-якого масштабу.</p>
-					<p>Ми пишаємося нашим індивідуальним підходом до кожного клієнта та проєкту, що дозволяє нам досягати
-						виняткових результатів.</p>
-					<h3>Наша місія</h3>
-					<p>Допомагати бізнесам розвиватися та досягати успіху, надаючи інноваційні та ефективні рішення.</p>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Додана секція "Нам довіряють" для соціальних доказів -->
+    <section id="партнери" class="section partners-section">
+        <div class="container">
+            <h2 class="section-subtitle">Нам довіряють</h2>
+            <div class="partners-grid" data-aos="fade-up" data-aos-duration="800">
+                <!-- Тут будуть логотипи партнерів -->
+                <div class="partner-logo"><img src="/api/placeholder/150/80" alt="Партнер 1"></div>
+                <div class="partner-logo"><img src="/api/placeholder/150/80" alt="Партнер 2"></div>
+                <div class="partner-logo"><img src="/api/placeholder/150/80" alt="Партнер 3"></div>
+                <div class="partner-logo"><img src="/api/placeholder/150/80" alt="Партнер 4"></div>
+                <div class="partner-logo"><img src="/api/placeholder/150/80" alt="Партнер 5"></div>
+            </div>
+            <div class="metrics-row" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="metric-item">
+                    <h3>50+</h3>
+                    <span>Успішних проєктів</span>
+                </div>
+                <div class="metric-item">
+                    <h3>98%</h3>
+                    <span>Задоволених клієнтів</span>
+                </div>
+                <div class="metric-item">
+                    <h3>5+</h3>
+                    <span>Років на ринку</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Services Section -->
-	<section id="послуги" class="section" style="background-color: #f8f9fa;">
-		<div class="container">
-			<h2 class="section-title">Наші послуги</h2>
-			<div class="services-grid">
-				<div class="service-card">
-					<img src="/api/placeholder/400/200" alt="Послуга 1">
-					<div class="service-content">
-						<h3>Послуга 1</h3>
-						<p>Опис вашої послуги. Розкажіть, що ви пропонуєте та які переваги отримає клієнт.</p>
-						<a href="#" class="btn" style="margin-top: 15px;">Детальніше</a>
-					</div>
-				</div>
-				<div class="service-card">
-					<img src="/api/placeholder/400/200" alt="Послуга 2">
-					<div class="service-content">
-						<h3>Послуга 2</h3>
-						<p>Опис вашої послуги. Розкажіть, що ви пропонуєте та які переваги отримає клієнт.</p>
-						<a href="#" class="btn" style="margin-top: 15px;">Детальніше</a>
-					</div>
-				</div>
-				<div class="service-card">
-					<img src="/api/placeholder/400/200" alt="Послуга 3">
-					<div class="service-content">
-						<h3>Послуга 3</h3>
-						<p>Опис вашої послуги. Розкажіть, що ви пропонуєте та які переваги отримає клієнт.</p>
-						<a href="#" class="btn" style="margin-top: 15px;">Детальніше</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- About Section з покращеним стилем -->
+    <section id="про-нас" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Про нас</h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./pro_comany.jpg" alt="Про нашу компанію" class="about-img">
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+                    <h3>Наша історія</h3>
+                    <p>Ми команда професіоналів з багаторічним досвідом роботи в галузі штучного інтелекту. Наша компанія була заснована з метою робити технології ШІ доступними та ефективними для бізнесу будь-якого масштабу.</p>
+                    <p>Ми пишаємося нашим індивідуальним підходом до кожного клієнта та проєкту, що дозволяє нам досягати виняткових результатів та забезпечувати реальний ROI для наших клієнтів.</p>
+                    <h3>Наша місія</h3>
+                    <p>Допомагати бізнесам розвиватися та досягати успіху, надаючи інноваційні та ефективні рішення у сфері штучного інтелекту, що підвищують ефективність, знижують витрати та відкривають нові можливості.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Portfolio Section -->
-	<section id="портфоліо" class="section">
-		<div class="container">
-			<h2 class="section-title">Наше портфоліо</h2>
-			<div class="portfolio-grid">
-				<div class="portfolio-item">
-					<img src="/api/placeholder/400/300" alt="Проєкт 1">
-					<div class="portfolio-overlay">
-						<h3>Проєкт 1</h3>
-						<p>Короткий опис проєкту</p>
-					</div>
-				</div>
-				<div class="portfolio-item">
-					<img src="/api/placeholder/400/300" alt="Проєкт 2">
-					<div class="portfolio-overlay">
-						<h3>Проєкт 2</h3>
-						<p>Короткий опис проєкту</p>
-					</div>
-				</div>
-				<div class="portfolio-item">
-					<img src="/api/placeholder/400/300" alt="Проєкт 3">
-					<div class="portfolio-overlay">
-						<h3>Проєкт 3</h3>
-						<p>Короткий опис проєкту</p>
-					</div>
-				</div>
-				<div class="portfolio-item">
-					<img src="/api/placeholder/400/300" alt="Проєкт 4">
-					<div class="portfolio-overlay">
-						<h3>Проєкт 4</h3>
-						<p>Короткий опис проєкту</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Services Section з оновленими послугами ШІ -->
+    <section id="послуги" class="section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Наші послуги</h2>
+            <p class="section-description" data-aos="fade-up">Ми пропонуємо повний спектр послуг для впровадження ШІ у ваш бізнес</p>
+            
+            <div class="services-grid">
+                <!-- Послуга 1: ШІ асистент - маркетолог/комунікаційник -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <img src="/api/placeholder/80/80" alt="ШІ маркетолог">
+                    </div>
+                    <div class="service-content">
+                        <h3>ШІ асистент - маркетолог/комунікаційник</h3>
+                        <p>Автоматизуйте створення контенту, аналіз ринку та комунікації з клієнтами за допомогою інтелектуального асистента. Підвищіть ефективність маркетингових кампаній та поліпшіть взаємодію з аудиторією.</p>
+                        <ul class="service-features">
+                            <li>Автоматичне створення контент-планів</li>
+                            <li>Аналіз ефективності кампаній</li>
+                            <li>Персоналізація комунікацій</li>
+                        </ul>
+                        <a href="#" class="btn">Дізнатися більше</a>
+                    </div>
+                </div>
+                
+                <!-- Послуга 2: ШІ асистент - HR менеджер -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <img src="/api/placeholder/80/80" alt="ШІ HR менеджер">
+                    </div>
+                    <div class="service-content">
+                        <h3>ШІ асистент - HR менеджер</h3>
+                        <p>Оптимізуйте процеси рекрутингу, навчання та розвитку персоналу за допомогою інтелектуальних технологій. Знаходьте ідеальних кандидатів швидше та покращуйте досвід співробітників.</p>
+                        <ul class="service-features">
+                            <li>Автоматичний скринінг резюме</li>
+                            <li>Персоналізовані програми навчання</li>
+                            <li>Аналітика задоволеності персоналу</li>
+                        </ul>
+                        <a href="#" class="btn">Дізнатися більше</a>
+                    </div>
+                </div>
+                
+                <!-- Послуга 3: ШІ асистент - продавець / консультант -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <img src="/api/placeholder/80/80" alt="ШІ продавець">
+                    </div>
+                    <div class="service-content">
+                        <h3>ШІ асистент - продавець / консультант</h3>
+                        <p>Збільшіть продажі та поліпшіть обслуговування клієнтів за допомогою інтелектуального асистента. Забезпечте швидку та якісну відповідь на запити клієнтів 24/7.</p>
+                        <ul class="service-features">
+                            <li>Автоматизація відповідей на запити</li>
+                            <li>Персоналізовані рекомендації продуктів</li>
+                            <li>Інтелектуальний аналіз потреб клієнта</li>
+                        </ul>
+                        <a href="#" class="btn">Дізнатися більше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Blog Section -->
-	<section id="блог" class="section" style="background-color: #f8f9fa;">
-		<div class="container">
-			<h2 class="section-title">Наш блог</h2>
-			<div class="services-grid">
-				<div class="service-card">
-					<img src="/api/placeholder/400/200" alt="Стаття 1">
-					<div class="service-content">
-						<h3>Заголовок статті 1</h3>
-						<p>Короткий опис статті з корисною інформацією для ваших клієнтів.</p>
-						<a href="#" class="btn" style="margin-top: 15px;">Читати далі</a>
-					</div>
-				</div>
-				<div class="service-card">
-					<img src="/api/placeholder/400/200" alt="Стаття 2">
-					<div class="service-content">
-						<h3>Заголовок статті 2</h3>
-						<p>Короткий опис статті з корисною інформацією для ваших клієнтів.</p>
-						<a href="#" class="btn" style="margin-top: 15px;">Читати далі</a>
-					</div>
-				</div>
-				<div class="service-card">
-					<img src="/api/placeholder/400/200" alt="Стаття 3">
-					<div class="service-content">
-						<h3>Заголовок статті 3</h3>
-						<p>Короткий опис статті з корисною інформацією для ваших клієнтів.</p>
-						<a href="#" class="btn" style="margin-top: 15px;">Читати далі</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Додана секція "Як ми працюємо" для методології -->
+    <section id="процес" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Як ми працюємо</h2>
+            <div class="process-steps">
+                <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Аналіз потреб</h3>
+                        <p>Ми проводимо детальний аналіз вашого бізнесу та визначаємо, які процеси можна оптимізувати за допомогою ШІ</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-right" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Розробка стратегії</h3>
+                        <p>Створюємо персоналізовану стратегію впровадження ШІ рішень, яка відповідає вашим бізнес-цілям</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Реалізація проєкту</h3>
+                        <p>Впроваджуємо ШІ рішення з мінімальним впливом на поточні процеси вашого бізнесу</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-right" data-aos-delay="400">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Підтримка та оптимізація</h3>
+                        <p>Забезпечуємо постійну підтримку та вдосконалення впроваджених рішень для максимальної ефективності</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Testimonials Section -->
-	<section id="відгуки" class="section">
-		<div class="container">
-			<h2 class="section-title">Відгуки клієнтів</h2>
-			<div class="testimonials-slider">
-				<div class="testimonial-card">
-					<p class="testimonial-text">"Чудова компанія з професійним підходом до справи. Результат перевершив усі наші
-						очікування. Ми дуже задоволені співпрацею і плануємо продовжувати роботу в майбутньому."</p>
-					<div class="client-info">
-						<img src="/api/placeholder/100/100" alt="Клієнт">
-						<div>
-							<h4>Ім'я Клієнта</h4>
-							<p>Посада, Компанія</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Portfolio Section з оновленим дизайном -->
+    <section id="портфоліо" class="section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Наші успішні кейси</h2>
+            <p class="section-description" data-aos="fade-up">Ознайомтеся з реальними прикладами того, як наші ШІ рішення допомогли бізнесам</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="/api/placeholder/400/300" alt="Кейс 1">
+                    <div class="portfolio-overlay">
+                        <h3>ШІ для логістичної компанії</h3>
+                        <p>Оптимізація маршрутів доставки та скорочення витрат на 25%</p>
+                        <a href="#" class="btn small-btn">Детальніше</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="/api/placeholder/400/300" alt="Кейс 2">
+                    <div class="portfolio-overlay">
+                        <h3>ШІ для ритейлу</h3>
+                        <p>Впровадження розумних асистентів продажу та збільшення конверсії на 35%</p>
+                        <a href="#" class="btn small-btn">Детальніше</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="/api/placeholder/400/300" alt="Кейс 3">
+                    <div class="portfolio-overlay">
+                        <h3>ШІ для клієнтської підтримки</h3>
+                        <p>Автоматизація 78% запитів та підвищення задоволеності клієнтів</p>
+                        <a href="#" class="btn small-btn">Детальніше</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="/api/placeholder/400/300" alt="Кейс 4">
+                    <div class="portfolio-overlay">
+                        <h3>ШІ для HR відділу</h3>
+                        <p>Скорочення часу на рекрутинг на 60% та покращення якості найму</p>
+                        <a href="#" class="btn small-btn">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Contact Section -->
-	<section id="контакти" class="section" style="background-color: #f8f9fa;">
-		<div class="container">
-			<h2 class="section-title">Зв'яжіться з нами</h2>
-			<div class="contact-form">
-				<form>
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Ваше ім'я" required>
-					</div>
-					<div class="form-group">
-						<input type="email" class="form-control" placeholder="Ваш email" required>
-					</div>
-					<div class="form-group">
-						<input type="tel" class="form-control" placeholder="Ваш телефон">
-					</div>
-					<div class="form-group">
-						<textarea class="form-control" placeholder="Ваше повідомлення" required></textarea>
-					</div>
-					<button type="submit" class="btn">Надіслати повідомлення</button>
-				</form>
-			</div>
-		</div>
-	</section>
+    <!-- Додана секція FAQ -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Часті запитання</h2>
+            <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Що таке ШІ рішення для бізнесу?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>ШІ рішення для бізнесу - це використання технологій штучного інтелекту для автоматизації процесів, аналізу даних, прогнозування трендів та оптимізації операцій, що дозволяє підвищити ефективність роботи та зменшити витрати.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Скільки часу займає впровадження ШІ рішень?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Час впровадження залежить від складності проєкту та готовності вашої інфраструктури. Типовий проєкт займає від 2 тижнів до 3 місяців. Ми пропонуємо поетапне впровадження для швидшого отримання результатів.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Яка окупність інвестицій в ШІ рішення?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Окупність залежить від конкретного рішення та бізнес-процесів, які воно оптимізує. За нашим досвідом, більшість проєктів окупаються в перші 6-12 місяців після впровадження завдяки підвищенню ефективності та зниженню витрат.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Чи потрібні спеціальні технічні знання для користування ШІ рішеннями?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ні, наші рішення розроблені для простого використання без спеціальних технічних знань. Ми забезпечуємо необхідне навчання персоналу та постійну підтримку для комфортного користування системою.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Як забезпечується безпека даних при використанні ШІ рішень?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ми дотримуємось найвищих стандартів безпеки даних, включаючи шифрування, регулярні аудити безпеки та відповідність вимогам GDPR. Всі дані обробляються та зберігаються за найсучаснішими протоколами безпеки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Кнопка "Вверх" -->
-	<button id="scrollToTop" class="scroll-to-top">
-		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-			<path d="M12 19V5M5 12l7-7 7 7"/>
-		</svg>
-	</button>
+    <!-- Blog Section з покращеним оформленням -->
+    <section id="блог" class="section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Наш блог</h2>
+            <p class="section-description" data-aos="fade-up">Корисні статті та новини зі світу штучного інтелекту</p>
+            
+            <div class="blog-grid">
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="/api/placeholder/400/250" alt="Стаття 1">
+                        <span class="blog-category">Тренди ШІ</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>10 трендів ШІ, які змінять бізнес у 2025 році</h3>
+                        <p class="blog-meta">15 травня 2025 | 8 хв читання</p>
+                        <p>Аналіз найважливіших тенденцій штучного інтелекту, які матимуть найбільший вплив на бізнес в найближчому майбутньому.</p>
+                        <a href="#" class="btn">Читати далі</a>
+                    </div>
+                </div>
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="/api/placeholder/400/250" alt="Стаття 2">
+                        <span class="blog-category">Впровадження ШІ</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Як впровадити ШІ в малий бізнес з обмеженим бюджетом</h3>
+                        <p class="blog-meta">10 травня 2025 | 6 хв читання</p>
+                        <p>Практичні поради для малого бізнесу щодо ефективного впровадження технологій штучного інтелекту без великих інвестицій.</p>
+                        <a href="#" class="btn">Читати далі</a>
+                    </div>
+                </div>
+                <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <img src="/api/placeholder/400/250" alt="Стаття 3">
+                        <span class="blog-category">Кейси</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Успішний кейс: Як ШІ збільшив продажі онлайн-магазину на 45%</h3>
+                        <p class="blog-meta">5 травня 2025 | 10 хв читання</p>
+                        <p>Детальний аналіз реального проєкту впровадження штучного інтелекту в процеси онлайн-магазину та отримані результати.</p>
+                        <a href="#" class="btn">Читати далі</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-all" data-aos="fade-up">
+                <a href="#" class="btn outline-btn">Переглянути всі статті</a>
+            </div>
+        </div>
+    </section>
 
-	<!-- Footer -->
-	<footer>
-		<div class="container">
-			<div class="footer-content">
-				<div class="footer-column">
-					<h3>Ваша Компанія</h3>
-					<p>Професійні рішення для вашого бізнесу</p>
-				</div>
-				<div class="footer-column">
-					<h3>Навігація</h3>
-					<ul class="footer-links">
-						<li><a href="#головна">Головна</a></li>
-						<li><a href="#про-нас">Про нас</a></li>
-						<li><a href="#послуги">Послуги</a></li>
-						<li><a href="#портфоліо">Портфоліо</a></li>
-						<li><a href="#блог">Блог</a></li>
-						<li><a href="#відгуки">Відгуки</a></li>
-						<li><a href="#контакти">Контакти</a></li>
-					</ul>
-				</div>
-				<div class="footer-column">
-					<h3>Контакти</h3>
-					<ul class="footer-links">
-						<li>Email: info@вашакомпанія.ua</li>
-						<li>Телефон: +380 (XX) XXX-XX-XX</li>
-						<li>Адреса: Ваша адреса</li>
-					</ul>
-				</div>
-				<div class="footer-column">
-					<h3>Соціальні мережі</h3>
-					<ul class="footer-links">
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Instagram</a></li>
-						<li><a href="#">LinkedIn</a></li>
-						<li><a href="#">Twitter</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="copyright">
-				<p>&copy; 2025 Ваша Компанія. Усі права захищені.</p>
-			</div>
-		</div>
-	</footer>
+    <!-- Testimonials Section з покращеним оформленням -->
+    <section id="відгуки" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Відгуки клієнтів</h2>
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Впровадження ШІ асистента для відділу продажів перевершило всі наші очікування. Конверсія зросла на 40%, а команда змогла зосередитись на стратегічних завданнях. Дуже задоволені співпрацею з EmpowerAI Solutions."</p>
+                    <div class="client-info">
+                        <img src="/api/placeholder/70/70" alt="Клієнт">
+                        <div>
+                            <h4>Олександр Петренко</h4>
+                            <p>Комерційний директор, Retail Pro</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"Наш HR відділ отримав потужний інструмент для автоматизації рутинних процесів. Економія часу вражає - ми скоротили час на первинний відбір кандидатів на 70%. Команда EmpowerAI Solutions виявила глибоке розуміння наших потреб."</p>
+                    <div class="client-info">
+                        <img src="/api/placeholder/70/70" alt="Клієнт">
+                        <div>
+                            <h4>Ірина Коваленко</h4>
+                            <p>HR директор, Global Tech</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="testimonial-text">"З впровадженням ШІ асистента для маркетингу наша команда стала генерувати в 3 рази більше контенту при тих же ресурсах. Якість контенту також зросла, що позитивно вплинуло на залучення нових клієнтів."</p>
+                    <div class="client-info">
+                        <img src="/api/placeholder/70/70" alt="Клієнт">
+                        <div>
+                            <h4>Марія Шевченко</h4>
+                            <p>Керівник маркетингу, Digicomm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev">&lt;</button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="testimonial-next">&gt;</button>
+            </div>
+        </div>
+    </section>
 
-	<script>
-		// Простой скрипт для мобильного меню
-		document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
-			document.querySelector('.nav-menu').classList.toggle('active');
-		});
+    <!-- Покращена Contact Section -->
+    <section id="контакти" class="section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Зв'яжіться з нами</h2>
+            <p class="section-description" data-aos="fade-up">Готові розпочати трансформацію вашого бізнесу за допомогою ШІ? Напишіть нам!</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="/api/placeholder/30/30" alt="Email">
+                        </div>
+                        <div class="contact-detail">
+                            <h3>Email</h3>
+                            <p>info@empowerai.solutions</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="/api/placeholder/30/30" alt="Телефон">
+                        </div>
+                        <div class="contact-detail">
+                            <h3>Телефон</h3>
+                            <p>+380 (50) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="/api/placeholder/30/30" alt="Адреса">
+                        </div>
+                        <div class="contact-detail">
+                            <h3>Офіс</h3>
+                            <p>м. Київ, вул. Хрещатик, 22</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <img src="/api/placeholder/30/30" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="/api/placeholder/30/30" alt="LinkedIn">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="/api/placeholder/30/30" alt="Instagram">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="/api/placeholder/30/30" alt="Telegram">
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="100">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше ім'я*</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Ваш email*</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Ваш телефон</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Компанія</label>
+                            <input type="text" id="company" class="form-control">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Ваше повідомлення*</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" required>
+                            <label for="consent">Я погоджуюсь на обробку персональних даних</label>
+                        </div>
+                        <button type="submit" class="btn primary-btn full-width">Надіслати повідомлення</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		// Плавний скрол для навігації
-		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-			anchor.addEventListener('click', function (e) {
-				e.preventDefault();
+    <!-- Кнопка "Вверх" з покращеним стилем -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
 
-				const targetId = this.getAttribute('href');
-				const targetElement = document.querySelector(targetId);
+    <!-- Footer з покращеним дизайном -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <img src="logo_ai_transparent.png" alt="EmpowerAI Solutions Logo">
+                    </a>
+                    <p>Трансформуємо бізнес через силу штучного інтелекту</p>
+                    <div class="footer-social">
+                        <a href="#"><img src="/api/placeholder/25/25" alt="Facebook"></a>
+                        <a href="#"><img src="/api/placeholder/25/25" alt="LinkedIn"></a>
+                        <a href="#"><img src="/api/placeholder/25/25" alt="Instagram"></a>
+                        <a href="#"><img src="/api/placeholder/25/25" alt="Twitter"></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Навігація</h3>
+                    <ul class="footer-links">
+                        <li><a href="#головна">Головна</a></li>
+                        <li><a href="#про-нас">Про нас</a></li>
+                        <li><a href="#послуги">Послуги</a></li>
+                        <li><a href="#портфоліо">Кейси</a></li>
+                        <li><a href="#блог">Блог</a></li>
+                        <li><a href="#відгуки">Відгуки</a></li>
+                        <li><a href="#контакти">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Послуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">ШІ для маркетингу</a></li>
+                        <li><a href="#">ШІ для HR</a></li>
+                        <li><a href="#">ШІ для продажів</a></li>
+                        <li><a href="#">Аналітика даних</a></li>
+                        <li><a href="#">Консультації з впровадження ШІ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Зв'язок</h3>
+                    <ul class="footer-contact">
+                        <li><strong>Email:</strong> info@empowerai.solutions</li>
+                        <li><strong>Телефон:</strong> +380 (50) 123-45-67</li>
+                        <li><strong>Адреса:</strong> м. Київ, вул. Хрещатик, 22</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 EmpowerAI Solutions. Усі права захищені.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Політика конфіденційності</a>
+                    <a href="#">Умови використання</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-				if (targetElement) {
-					window.scrollTo({
-						top: targetElement.offsetTop - 70,
-						behavior: 'smooth'
-					});
+    <!-- Скрипти -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Ініціалізація анімацій при прокрутці
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            
+            // Мобільне меню
+            const mobileMenuButton = document.querySelector('.mobile-menu-btn');
+            const navMenu = document.querySelector('.nav-menu');
+            const body = document.body;
 
-					// Закрити мобільне меню після кліку
-					document.querySelector('.nav-menu').classList.remove('active');
-				}
-			});
-		});
+            // Функція для перевірки ширини екрану
+            function checkScreenWidth() {
+                if (window.innerWidth > 768) {
+                    navMenu.classList.remove('active');
+                    mobileMenuButton.textContent = '☰';
+                    body.style.overflow = '';
+                }
+            }
 
-		// Кнопка прокрутки вверх
-		const scrollToTopButton = document.getElementById('scrollToTop');
+            // Слухач зміни розміру вікна
+            window.addEventListener('resize', checkScreenWidth);
 
-		// Показываем/скрываем кнопку при прокрутке
-		window.addEventListener('scroll', () => {
-			if (window.pageYOffset > 300) { // Показываем кнопку после прокрутки на 300px
-				scrollToTopButton.classList.add('visible');
-			} else {
-				scrollToTopButton.classList.remove('visible');
-			}
-		});
+            mobileMenuButton.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                mobileMenuButton.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+                body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
 
-		// Прокрутка вверх при клике
-		scrollToTopButton.addEventListener('click', () => {
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth'
-			});
-		});
-	</script>
+                if (navMenu.classList.contains('active')) {
+                    const menuItems = navMenu.querySelectorAll('li');
+                    menuItems.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 100 * index);
+                    });
+                }
+            });
+
+            // Закриття меню при кліку на пункт меню
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth <= 768) {
+                        navMenu.classList.remove('active');
+                        mobileMenuButton.textContent = '☰';
+                        body.style.overflow = '';
+                    }
+                });
+            });
+
+            // Закриття меню при кліку вне його
+            document.addEventListener('click', (e) => {
+                if (!navMenu.contains(e.target) && !mobileMenuButton.contains(e.target)) {
+                    if (window.innerWidth <= 768 && navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        mobileMenuButton.textContent = '☰';
+                        body.style.overflow = '';
+                    }
+                }
+            });
+            
+            // Плавний скрол для навігації
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Закрити мобільне меню після кліку
+                        navMenu.classList.remove('active');
+                        mobileMenuButton.textContent = '☰';
+                    }
+                });
+            });
+            
+            // Кнопка прокрутки вверх
+            const scrollToTopButton = document.getElementById('scrollToTop');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    scrollToTopButton.classList.add('visible');
+                } else {
+                    scrollToTopButton.classList.remove('visible');
+                }
+            });
+            
+            scrollToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // FAQ секція - розкриття/закриття відповідей
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const parent = question.parentNode;
+                    parent.classList.toggle('active');
+                    
+                    const toggle = question.querySelector('.faq-toggle');
+                    toggle.textContent = parent.classList.contains('active') ? '−' : '+';
+                });
+            });
+            
+            // Слайдер для відгуків
+            const testimonialSlider = {
+                container: document.querySelector('.testimonials-slider'),
+                cards: document.querySelectorAll('.testimonial-card'),
+                dots: document.querySelectorAll('.testimonial-dots .dot'),
+                prevBtn: document.querySelector('.testimonial-prev'),
+                nextBtn: document.querySelector('.testimonial-next'),
+                currentIndex: 0,
+                
+                init() {
+                    if (!this.container) return;
+                    
+                    this.showSlide(0);
+                    
+                    this.prevBtn.addEventListener('click', () => {
+                        this.currentIndex = (this.currentIndex - 1 + this.cards.length) % this.cards.length;
+                        this.showSlide(this.currentIndex);
+                    });
+                    
+                    this.nextBtn.addEventListener('click', () => {
+                        this.currentIndex = (this.currentIndex + 1) % this.cards.length;
+                        this.showSlide(this.currentIndex);
+                    });
+                    
+                    this.dots.forEach((dot, index) => {
+                        dot.addEventListener('click', () => {
+                            this.currentIndex = index;
+                            this.showSlide(index);
+                        });
+                    });
+                    
+                    // Автоматична зміна слайдів
+                    setInterval(() => {
+                        this.currentIndex = (this.currentIndex + 1) % this.cards.length;
+                        this.showSlide(this.currentIndex);
+                    }, 8000);
+                },
+                
+                showSlide(index) {
+                    this.cards.forEach((card, i) => {
+                        card.style.display = i === index ? 'block' : 'none';
+                    });
+                    
+                    this.dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === index);
+                    });
+                }
+            };
+            
+            testimonialSlider.init();
+            
+            // Мультимовність
+            function changeLanguage() {
+                // Реалізація зміни мови буде додана пізніше
+                const selectedLanguage = document.getElementById('language-select').value;
+                console.log(`Зміна мови на: ${selectedLanguage}`);
+                // TODO: Додати логіку зміни мови
+            }
+            
+            // Валідація форми
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Тут буде реалізована логіка відправки форми
+                    alert('Дякуємо! Ваше повідомлення відправлено. Ми зв\'яжемося з вами найближчим часом.');
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
